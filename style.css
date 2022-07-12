@@ -1,0 +1,82 @@
+/* Site wide styling */
+* {
+    font-family: verdana;
+    color: rgb(54, 46, 46);
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    align-items: center;
+    padding: 1rem;
+}
+#site-title {
+    font-size: 2rem;
+    color: white;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+}
+.selected{
+    font-weight: bold;
+}
+
+/* form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    align-items: center;
+    border-radius: 15px;
+}
+.form-field{
+    padding: .5rem;
+}
+.save{
+    background-color: dodgerblue;
+    color: white;
+}
+button{
+    padding: .5rem;
+    font-weight: bold;
+}
+/* contact card styling */
+#user-contactinfo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.contact-card {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 15px;
+    flex: 1 1 33%;
+}
+
+/* responsive design - mobile */
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #site-title{
+        padding-bottom: 1rem;
+    }
+    nav a{
+        padding-bottom: .5rem;
+    }
+    .form{
+        align-items: flex-start;
+    }
+    .contact-card{
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+

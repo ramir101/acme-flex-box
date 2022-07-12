@@ -10,35 +10,41 @@
 <body>
     <Nav>
         <div id="site-title"> Acme layout </div>
-        <div class="page links">
-            <a href="#">Users</a>
+            <a href="#" class="selected">Users</a>
             <a href="#">Departments</a>
-            <a href="#">Contact Us</a>
-        </div>
+            <a href="#" class="contact us">Contact Us</a> 
     </Nav>
     <h1 class="page title">Users</h1>
-    <form action="" class="form">
-        <h3 class="form-title">Create A User</h3>
-        <div class="form-field">
-            <label for="name">First Name</label>
-            <input type="text" name="name" id="first-name">
-        </div>
-        <div class="form-field">
-            <label for="name">Last Name</label>
-            <input type="text" name="name" id="last-name">
-        </div>
-        <div class="form-field">
-            <label for="department-name">Department</label>
-            <select name="department-name" id="department-name">
-                <option value="">--None--</option>
-                <option value="English">English</option>
-                <option value="Science">Science</option>
-                <option value="History">History</option>
-                <option value="Spanish">Spanish</option>
-            </select>
-        </div>
-    </form>
-    <div id="User-contactinfo">
+    <div id="form block">
+        <form action="" class="form">
+            <h3 class="form-title">Create A User</h3>
+            <div class="form-field">
+                <label for="name">First Name</label>
+                <input type="text" name="name" id="first-name">
+            </div>
+            <div class="form-field">
+                <label for="name">Last Name</label>
+                <input type="text" name="name" id="last-name">
+            </div>
+            <div class="form-field">
+                <label for="department-name">Department</label>
+                <select name="department-name" id="department-name">
+                    <option value="">--None--</option>
+                    <option value="English">English</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                    <option value="Spanish">Spanish</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <button class="clear">Clear</button>
+                <button class="save">Save</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div id="user-contactinfo">
         <div class="contact-card">
             <h4>User A</h4>
             <p>A cool dude</p>
